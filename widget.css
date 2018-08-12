@@ -1,0 +1,15 @@
+#widget_squares_container {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.widget_square {
+	display: inline-block;
+	font-size: 0;
+	height: 50px;
+	margin: 0;
+	margin-right: -4px;
+	padding: 0;
+}
