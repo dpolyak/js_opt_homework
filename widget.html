@@ -16,6 +16,7 @@
 	width: 25%;
 	height: 50px;
 	margin: 0;
+	margin-right: -4px;
 	padding: 0;
 }
 
@@ -33,11 +34,39 @@
 }
 
 </style>
+<script>
+	var NUM_OF_SQUARES = 4;
+
+	function changeSquareWidth(elem) {
+		var parant = elem.parentNode;
+		var all_squars = parant.childNodes;
+		
+		var current_width = elem.offsetWidth;
+
+    	for (i = 0; i < all_squars.length; i++) { 
+    		if (all_squars[i].nodeName == "LI") {
+    			console.log( all_squars[i].offsetWidth );
+
+    			if (all_squars[i] == elem){
+    				console.log( 'clicked' );
+    				elem.style.width = (400+"px");
+    			}
+    			else {
+    				all_squars[i].style.width = (50+"px");
+    			}
+    		}
+		}
+	}
+
+</script>
 </head>
 <body>
 
 	<ul class="widget_squares_contaner">
-	  <li class="widget_square sq_idx_0"></li><li class="widget_square sq_idx_1"></li><li class="widget_square sq_idx_2"></li><li class="widget_square sq_idx_3"></li>
+	  <li class="widget_square sq_idx_0" onclick="changeSquareWidth(this)"></li>
+	  <li class="widget_square sq_idx_1" onclick="changeSquareWidth(this)"></li>
+	  <li class="widget_square sq_idx_2" onclick="changeSquareWidth(this)"></li>
+	  <li class="widget_square sq_idx_3" onclick="changeSquareWidth(this)"></li>
 	</ul>
 
 </body>
