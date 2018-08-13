@@ -1,4 +1,4 @@
-var NUM_OF_SQUARES = 8;
+var NUM_OF_SQUARES = 3;
 var WIDTH_DELTA = 80; 
 var SQUARE_MIN_WIDTH = 150;
 
