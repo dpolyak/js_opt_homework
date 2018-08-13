@@ -1,9 +1,14 @@
+body {
+	margin-top: 50px;
+}
+
 #widget_squares_container {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	position: fixed;
+	z-index: 2;
 	top: 0;
 	left: 0;
 }
